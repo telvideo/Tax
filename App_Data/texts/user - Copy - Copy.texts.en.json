@@ -1,0 +1,9 @@
+{
+  "Db.CSM.VCsmBillOutCenterList.BotsodTitle": "نوع  فرآیند",
+  "Db.CSM.VCsmGuarantyDevicePartInfo.FkProperty3PrpName": "نام ویژگی3",
+  "Db.CSM.VCsmPartApplyHeader.GeneratorName": "ثبت کننده",
+  "Db.CSM.VCsmPartApplyHeader.LastModifier": "آخرین  ویرایشگر",
+  "Db.CSM.VCSMReceptionList.FkReceptionType": "نوع اقدام",
+  "ERP.CSM.DoYouWantToReplaceDevice": "Do you want to replace device ?",
+  "Validation.YouDontHaveACartable": "You don't have a cartable"
+}
