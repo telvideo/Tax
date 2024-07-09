@@ -1,0 +1,11 @@
+{
+  "compilerOptions": { "experimentalDecorators": true },
+  "include": [
+    "./typings/serenity/Serenity.CoreLib.d.ts",
+    "./typings/jspdf/jspdf.autotable.d.ts",
+    "./typings/jsondiffpatch/index.d.ts",
+    "./typings/bootstrap-switch/index.d.ts",
+    "./Imports/**/*",
+    "./Modules/**/*"
+  ]
+}

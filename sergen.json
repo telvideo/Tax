@@ -1,0 +1,1880 @@
+{
+  "RootNamespace": "ERP",
+  "ServerTypings": {
+    "LocalTexts": true
+  },
+  "Restore": {
+    "Exclude": [
+      "/wwwroot/Scripts/serenity/Serenity.CoreLib*.*"
+    ]
+  },
+  "Connections": [
+    {
+      "Key": "Acc",
+      "Tables": [
+        {
+          "Tablename": "Acc.Tbl_AttachFileDocument",
+          "Identifier": "AttachFileDocument",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Acc.Tbl_DefineFiscalDomain",
+          "Identifier": "DefineFiscalDomain",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Acc.Tbl_OfficeKol",
+          "Identifier": "OfficeKol",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Acc.View_AllDocument",
+          "Identifier": "Acc_ViewAllDocument",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ContraryToNature",
+          "Identifier": "Acc_ControlEssenceAccount",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_AccessAccountBank",
+          "Identifier": "Acc_AccessAccountBank",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_AccountingDocumentIssueTemp",
+          "Identifier": "Acc_AccountingDocumentIssueTemp",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_CloseAccount",
+          "Identifier": "Acc_CloseAccount",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_CostPortion",
+          "Identifier": "Acc_CostPortion",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_CostSharingFormalsTemp",
+          "Identifier": "Acc_CostSharingFormalsTemp",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_CostSharingIssueTemp",
+          "Identifier": "Acc_CostSharingIssueTemp",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_CostSharingMoeinsTemp",
+          "Identifier": "Acc_CostSharingMoeinsTemp",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefaultValuta",
+          "Identifier": "Acc_DefaultValuta",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineAccountBank",
+          "Identifier": "Acc_DefineAccountBank",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineArm",
+          "Identifier": "Acc_DefineArm",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineAsset",
+          "Identifier": "Acc_DefineAsset",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineBank",
+          "Identifier": "Acc_DefineBank",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineCash",
+          "Identifier": "Acc_DefineCash",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineCompany",
+          "Identifier": "Acc_DefineCompany",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineCostCenter",
+          "Identifier": "Acc_DefineCostCenter",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineCredibility",
+          "Identifier": "Acc_DefineCredibility",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineDocumentSpecies",
+          "Identifier": "Acc_DefineDocumentSpecies",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineFormalAssumption",
+          "Identifier": "Acc_DefineFormalAssumption",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineGroup",
+          "Identifier": "Acc_DefineGroup",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineGroupFormal",
+          "Identifier": "Acc_DefineGroupFormal",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineGroup_Lang",
+          "Identifier": "Acc_DefineGroup_Lang",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineMoein",
+          "Identifier": "Acc_DefineMoein",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineOther",
+          "Identifier": "Acc_DefineOther",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefinePersona",
+          "Identifier": "Acc_DefinePersona",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefinePortion",
+          "Identifier": "Acc_DefinePortion",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineProject",
+          "Identifier": "Acc_DefineProject",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineTotal",
+          "Identifier": "Acc_DefineTotal",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineValuta",
+          "Identifier": "Acc_DefineValuta",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DetailDocumentAccounting",
+          "Identifier": "Acc_DetailDocumentAccounting",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_FormalGroup",
+          "Identifier": "Acc_FormalGroup",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_HeadDocumentAccounting",
+          "Identifier": "Acc_HeadDocumentAccounting",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_MoeinFormalGroup",
+          "Identifier": "Acc_MoeinFormalGroup",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_MoeinType",
+          "Identifier": "Acc_MoeinType",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_DefaultValuta",
+          "Identifier": "DefaultValuta",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.View_Acc_ListFormal",
+          "Identifier": "Acc_ListFormal",
+          "Module": "Acc",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Arm",
+      "Tables": [
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineGroup",
+          "Identifier": "ChildCompanyCoding",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineGroupFormal",
+          "Identifier": "Acc_DefineGroupFormal",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_TempAccountPerusal",
+          "Identifier": "Acc_TempAccountPerusal",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Arm_AccountingDocumentIssueTemp",
+          "Identifier": "Arm_AccountingDocumentIssueTemp",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Arm_DocumentTotal",
+          "Identifier": "Arm_DocumentTotal",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Arm_HeadDocumentAccounting",
+          "Identifier": "Arm_HeadDocumentAccounting",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Arm_TempAccountCircuit",
+          "Identifier": "Arm_TempAccountCircuit",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Arm_TempAccountPerusal",
+          "Identifier": "Arm_TempAccountPerusal",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.tmp_Tbl_Acc_Excel",
+          "Identifier": "TmpTblAccExcel",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.tmp_Tbl_Arm_AnalyticalReport",
+          "Identifier": "Tbl_Arm_AnalyticalReport",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.View_Acc_ListFormal",
+          "Identifier": "Acc_ListFormal",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.VIEW_Acc_Temp_HeadDocumentAccounting",
+          "Identifier": "Acc_Temp_HeadDocumentAccounting",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Attach",
+      "Tables": [
+        {
+          "Tablename": "dbo.Tbl_Arm_AttachFileDocument",
+          "Identifier": "Arm_AttachFileDocument",
+          "Module": "Arm",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Clb",
+      "Tables": [
+        {
+          "Tablename": "dbo.Tbl_Clb_FavoritGroupObject",
+          "Identifier": "Clb_FavoritGroupObject",
+          "Module": "Clb",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clb_FavoritType",
+          "Identifier": "Clb_FavoritType",
+          "Module": "Clb",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clb_LevelCondition",
+          "Identifier": "Clb_LevelCondition",
+          "Module": "Clb",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clb_LevelType",
+          "Identifier": "Clb_LevelType",
+          "Module": "Clb",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clb_OpinionType",
+          "Identifier": "Clb_OpinionType",
+          "Module": "Clb",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clb_ScoreType",
+          "Identifier": "Clb_ScoreType",
+          "Module": "Clb",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clb_SpendScore",
+          "Identifier": "Clb_SpendScore",
+          "Module": "Clb",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clb_UserFavorit",
+          "Identifier": "Clb_UserFavorit",
+          "Module": "Clb",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clb_UserOpinion",
+          "Identifier": "Clb_UserOpinion",
+          "Module": "Clb",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clb_UserScore",
+          "Identifier": "Clb_UserScore",
+          "Module": "Clb",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Clr",
+      "Tables": [
+        {
+          "Tablename": "Clr.Tbl_DefineGroupObjectSpec",
+          "Identifier": "Clr_DefineGroupObjectSpec",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Clr.Tbl_HeadOrderBuy",
+          "Identifier": "Clr_ListHearOrderBuy",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Clr.Tbl_NewDefineSpecial",
+          "Identifier": "Clr_NewDefineSpecial",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_CellarKind",
+          "Identifier": "Clr_CellarKind",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_DefineCellar",
+          "Identifier": "Clr_DefineCellar",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_DefineCellarKind",
+          "Identifier": "Clr_DefineCellarKind",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_DefineGroupObject",
+          "Identifier": "Clr_DefineGroupObject",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_DefineObject",
+          "Identifier": "Clr_DefineObject",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_DefineScruple",
+          "Identifier": "Clr_DefineScruple",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_DetailDocument",
+          "Identifier": "Clr_DetailDocument",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_DetailObjectBuyDeclaration",
+          "Identifier": "Clr_DetailObjectBuyDeclaration",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_GroupObject",
+          "Identifier": "Clr_GroupObject",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_HeadDocument",
+          "Identifier": "Clr_HeadDocument",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_HeadObjectBuyDeclaration",
+          "Identifier": "Clr_HeadObjectBuyDeclaration",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_ObjectBarCode",
+          "Identifier": "Clr_ObjectBarCode",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_PermissionCellar",
+          "Identifier": "Clr_PermissionCellar",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_PhysicalPlace",
+          "Identifier": "Clr_PhysicalPlace",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_PhysicalPlaceObject",
+          "Identifier": "Clr_PhysicalPlaceObject",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_SetupDocuments",
+          "Identifier": "Clr_SetupDocuments",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_TempExportation",
+          "Identifier": "Clr_TempExportation",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.View_Clr_DebrisDocument",
+          "Identifier": "Clr_VDebrisDocument",
+          "Module": "Clr",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "COP",
+      "Tables": [
+        {
+          "Tablename": "dbo.Activity",
+          "Identifier": "Activity",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ActivityType",
+          "Identifier": "ActivityType",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.AveragePeopleCost",
+          "Identifier": "AveragePeopleCost",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Calendar",
+          "Identifier": "Calendar",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CenterActivityStimulus",
+          "Identifier": "CenterActivityStimulus",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CenterActivityStimulusCost",
+          "Identifier": "CenterActivityStimulusCost",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CenterActivityStimulusValue",
+          "Identifier": "CenterActivityStimulusValue",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CenterStimulus",
+          "Identifier": "CenterStimulus",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Company",
+          "Identifier": "Company",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Year",
+          "Identifier": "ComYear",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CostCenter",
+          "Identifier": "CostCenter",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CostCenterType",
+          "Identifier": "CostCenterType",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CostFactorsBehavior",
+          "Identifier": "CostFactorsBehavior",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CostProductInProductCenter",
+          "Identifier": "CostProductInProductCenter",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CostProductInProductCenterDetail",
+          "Identifier": "CostProductInProductCenterDetail",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CustProductInProductCenter",
+          "Identifier": "CustProductInProductCenter",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.EstimateCostSalaryOrg",
+          "Identifier": "EstimateCostSalaryOrg",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.MoeinType",
+          "Identifier": "MoeinType",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.OverheadCost",
+          "Identifier": "OverheadCost",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.PriceStimulus",
+          "Identifier": "PriceStimulus",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ProductActivity",
+          "Identifier": "ProductActivity",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ProductActivityDetail",
+          "Identifier": "ProductActivityDetail",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ProductCenterCostShare",
+          "Identifier": "ProductCenterCostShare",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ProductCenterStimulus",
+          "Identifier": "ProductCenterStimulus",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ProductTree",
+          "Identifier": "ProductTree",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ProductTreeR",
+          "Identifier": "ProductTreeR",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ResponsCenter",
+          "Identifier": "ResponsCenter",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ResponsCenterProduct",
+          "Identifier": "ResponsCenterProduct",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ResponsCenterSpec",
+          "Identifier": "ResponsCenterSpec",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ResponsCenterSpecDetail",
+          "Identifier": "ResponsCenterSpecDetail",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ResponsCenterSpecSumView",
+          "Identifier": "ResponsCenterSpecSumView",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ResponsCenterType",
+          "Identifier": "ResponsCenterType",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.StandardFee",
+          "Identifier": "StandardFee",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.StandardPeriod",
+          "Identifier": "StandardPeriod",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.WorkShift",
+          "Identifier": "WorkShift",
+          "Module": "COP",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "csm",
+      "Tables": [
+        {
+          "Tablename": "dbo.ACC_ACCOUNT_LST",
+          "Identifier": "AccAccountLst",
+          "Module": "ACC",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ACC_FINANCIAL_DISTRICT",
+          "Identifier": "AccFinancialDistrict",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ACC_TAFSIL1_LST",
+          "Identifier": "AccTafsil1Lst",
+          "Module": "ACC",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ACC_TAFSIL2_LST",
+          "Identifier": "AccTafsil2Lst",
+          "Module": "ACC",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ACC_TAFSIL3_LST",
+          "Identifier": "AccTafsil3Lst",
+          "Module": "ACC",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ACC_TAFSIL4_LST",
+          "Identifier": "AccTafsil4Lst",
+          "Module": "ACC",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.AppSetting",
+          "Identifier": "AppSetting",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Cartable",
+          "Identifier": "ComCartable",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Cartable_Process",
+          "Identifier": "ComCartableProcess",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Cartable_Process_WorkFlow",
+          "Identifier": "ComCartableProcessWorkFlow",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Cartable_Requirement_Bill_OutCenter",
+          "Identifier": "ComCartableRequirementBillOutCenter",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Cartable_Requirement_CSM_PartApply_Detial",
+          "Identifier": "ComCartableRequirementCsmPartApplyDetial",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Company",
+          "Identifier": "ComCompany",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Document_Folder",
+          "Identifier": "ComDocumentFolder",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Entity",
+          "Identifier": "ComEntity",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Header",
+          "Identifier": "ComHeader",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Organization_Post",
+          "Identifier": "ComOrganizationPost",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Personnel",
+          "Identifier": "ComPersonnel",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Person_Post",
+          "Identifier": "ComPersonPost",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Static_Option_Detail",
+          "Identifier": "ComStaticOptionDetail",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Status_Setting",
+          "Identifier": "ComStatusSetting",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Tree_Coding",
+          "Identifier": "ComTreeCoding",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.COM_Year",
+          "Identifier": "ComYear",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CRM_Contact_Info_Header",
+          "Identifier": "CrmContactInfoHeader",
+          "Module": "CRM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CRM_Contact_Info_Owner",
+          "Identifier": "CrmContactInfoOwner",
+          "Module": "CRM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Agency_ServiceAgency_Personnel",
+          "Identifier": "CsmAgencyServiceAgencyPersonnel",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Bill",
+          "Identifier": "CsmBill",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Bill_Device_Part",
+          "Identifier": "CsmBillDevicePart",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Bill_Device_Service",
+          "Identifier": "CsmBillDeviceService",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Bill_OutCenter_List",
+          "Identifier": "CsmBillOutCenterList",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Customer",
+          "Identifier": "CsmCustomer",
+          "Module": "CSM",
+          "PermissionKey": "CSM:Customer"
+        },
+        {
+          "Tablename": "dbo.CSM_Delivery",
+          "Identifier": "CsmDelivery",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Device_Accessory",
+          "Identifier": "CsmDeviceAccessory",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Device_Fault",
+          "Identifier": "CsmDeviceFault",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Device_Info",
+          "Identifier": "CsmDeviceInfo",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Guaranty_Device_Part",
+          "Identifier": "CsmGuarantyDevicePart",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Guaranty_Type",
+          "Identifier": "CsmGuarantyType",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_PartApply_Detail",
+          "Identifier": "CsmPartApplyDetail",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_PartApply_Header",
+          "Identifier": "CsmPartApplyHeader",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Payment",
+          "Identifier": "CsmPayment",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Reception",
+          "Identifier": "CsmReception",
+          "Module": "CSM",
+          "PermissionKey": "CSM:Reciption"
+        },
+        {
+          "Tablename": "dbo.CSM_Reception_Device",
+          "Identifier": "CsmReceptionDevice",
+          "Module": "CSM",
+          "PermissionKey": "CSM:ReciptionDevice"
+        },
+        {
+          "Tablename": "dbo.CSM_Reception_Device_Accessory",
+          "Identifier": "CsmReceptionDeviceAccessory",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Reception_Device_Fault",
+          "Identifier": "CsmReceptionDeviceFault",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Reception_Device_Service",
+          "Identifier": "CsmReceptionDeviceService",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Reception_Device_Status",
+          "Identifier": "CsmReceptionDeviceStatus",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Reception_Device_Status_Log",
+          "Identifier": "CsmReceptionDeviceStatusLog",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Reception_Device_Status_Refrence",
+          "Identifier": "CsmReceptionDeviceStatusRefrence",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Repairer_Info",
+          "Identifier": "CsmRepairerInfo",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_WorkingReport_Device_Fault",
+          "Identifier": "CsmWorkingReportDeviceFault",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_WorkingReport_Device_Part",
+          "Identifier": "CsmWorkingReportDevicePart",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_WorkingReport_Repairer",
+          "Identifier": "CsmWorkingReportRepairer",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSM_Workshop",
+          "Identifier": "CsmWorkshop",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSSInvRltTopics",
+          "Identifier": "CssInvRltTopics",
+          "Module": "CSS",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSS_COMBO_DETAIL",
+          "Identifier": "CssComboDetail",
+          "Module": "CSS",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSS_Inventory_lst",
+          "Identifier": "InventoryList",
+          "Module": "INV",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.CSS_Kala_lst",
+          "Identifier": "CssKalaLst",
+          "Module": "CSS",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.FPC_COM_Settings",
+          "Identifier": "FpcComSettings",
+          "Module": "Administration",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.INVReceiptHeader",
+          "Identifier": "InvReceiptHeader",
+          "Module": "INV",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.INV_Export_Header",
+          "Identifier": "InvExportHeader",
+          "Module": "INV",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.INV_Property1_LST",
+          "Identifier": "InvProperty1Lst",
+          "Module": "INV",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.INV_Property2_LST",
+          "Identifier": "InvProperty2Lst",
+          "Module": "INV",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.INV_Property3_LST",
+          "Identifier": "InvProperty3Lst",
+          "Module": "INV",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.INV_Property4_LST",
+          "Identifier": "InvProperty4Lst",
+          "Module": "INV",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.INV_TransactionScope",
+          "Identifier": "InvTransactionScope",
+          "Module": "INV",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Sale_Refund_Header",
+          "Identifier": "SaleRefundHeader",
+          "Module": "SALE",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Sequrity",
+          "Identifier": "Sequrity",
+          "Module": "Administration",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.SLR_WorkGroup",
+          "Identifier": "SlrWorkGroup",
+          "Module": "SLR",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.tmpCartableData",
+          "Identifier": "CartableData",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_COM_Document_Full",
+          "Identifier": "VComDocumentFull",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_COM_Document_Header_Detail",
+          "Identifier": "VComDocumentHeaderDetail",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_COM_Relations_Diagram",
+          "Identifier": "ComRelationsDiagram",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_COM_Sequrity",
+          "Identifier": "VComSequrity",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CRM_Contact_Info_Owner_Header",
+          "Identifier": "VCrmContactInfoOwnerHeader",
+          "Module": "CRM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Accessory",
+          "Identifier": "VCsmAccessory",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Agency_Personel",
+          "Identifier": "VCsmAgencyPersonel",
+          "Module": "Csm",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Bill_OutCenter_Device_List",
+          "Identifier": "VCsmBillOutCenterDeviceList",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Bill_OutCenter_Device_WEB",
+          "Identifier": "BillOutCenterDevices",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Bill_OutCenter_List",
+          "Identifier": "VCsmBillOutCenterList",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Customer",
+          "Identifier": "VCSMCustomer",
+          "Module": "CSM",
+          "PermissionKey": "CSM:Customer"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Customer_ContactInfo",
+          "Identifier": "VCSMCustomerContactInfo",
+          "Module": "CSM",
+          "PermissionKey": "CSM:CustomerContactInfo"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Guaranty_Device",
+          "Identifier": "VCsmGuarantyDevice",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Guaranty_Device_Part_Info",
+          "Identifier": "VCsmGuarantyDevicePartInfo",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Guaranty_Device_Service_Info",
+          "Identifier": "VCsmGuarantyDeviceServiceInfo",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_PartApply_Detail",
+          "Identifier": "VCsmPartApplyDetail",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_PartApply_Header",
+          "Identifier": "VCsmPartApplyHeader",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Reception",
+          "Identifier": "VCSMReception",
+          "Module": "CSM",
+          "PermissionKey": "CSM:Reciption"
+        },
+        {
+          "Tablename": "dbo.V_CSM_ReceptionDevice_WEB",
+          "Identifier": "ReceptionDevices",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Reception_Customer_History",
+          "Identifier": "VCsmReceptionCustomerHistory",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Reception_Device",
+          "Identifier": "VCsmReceptionDevice",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Reception_List",
+          "Identifier": "VCSMReceptionList",
+          "Module": "CSM",
+          "PermissionKey": "CSM:Reception"
+        },
+        {
+          "Tablename": "dbo.V_CSM_Repairer_Info",
+          "Identifier": "VCsmRepairerInfo",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_ServiceAgency",
+          "Identifier": "ServiceAgency",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_CSM_SupportContract_Header",
+          "Identifier": "VCsmSupportContractHeader",
+          "Module": "CSM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_INV_Receipt_Header_WEB",
+          "Identifier": "ReceiptHeader",
+          "Module": "INV",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.V_WEB_FPC_COM_Settings",
+          "Identifier": "ComSetting",
+          "Module": "Administration",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "dbo.HSG_COM_Settings",
+          "Identifier": "HsgComSettings",
+          "Module": "COM",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_DefineCompany",
+          "Identifier": "CompanySelect",
+          "Module": "Membership",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.TenantHistory",
+          "Identifier": "TenantHistory",
+          "Module": "Administration",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tenants",
+          "Identifier": "Tenants",
+          "Module": "Administration",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Exr",
+      "Tables": [
+        {
+          "Tablename": "dbo.Tbl_Acc_DefineCashier",
+          "Identifier": "Exr_DefineCashier",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Acc_StockCash",
+          "Identifier": "Exr_StockCash",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Buy_HeadDocument",
+          "Identifier": "Exr_SelectBuy",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_DefineCheque",
+          "Identifier": "Exr_DefineCheque",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_DefineDraft",
+          "Identifier": "Exr_DefineDraft",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_DefineOperation",
+          "Identifier": "Exr_DefineOperation",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_DetailCheque",
+          "Identifier": "Exr_DetailCheque",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_DetailDocument",
+          "Identifier": "Exr_DetailDocument",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_HeadDocument",
+          "Identifier": "Exr_HeadDocument",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_HeadDocuments",
+          "Identifier": "Exr_HeadDocuments",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_OperationMoein",
+          "Identifier": "Exr_OperationMoein",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_OperationsConsts",
+          "Identifier": "Exr_OperationsConsts",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_RequestFromExchequerDetails",
+          "Identifier": "Exr_RequestFromExchequerDetails",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_RequestFromExchequerHead",
+          "Identifier": "Exr_RequestFromExchequerHead",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_SelectForPayment",
+          "Identifier": "Exr_SelectForPayment",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_TempDetailAccounting",
+          "Identifier": "Exr_TempDetailAccounting",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Exr_TempDetailDocument",
+          "Identifier": "Exr_TempDetailDocument",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.View_Exr_DefineCheque",
+          "Identifier": "Exr_InvalidateCheque",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.View_Exr_Document",
+          "Identifier": "Exr_DocumentView",
+          "Module": "Exr",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Main",
+      "Tables": [
+        {
+          "Tablename": "dbo.Tbl_Main_ArmUsers",
+          "Identifier": "Main_ArmUsers",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_Calender",
+          "Identifier": "Main_Calender",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_Consts",
+          "Identifier": "Main_Consts",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_ControlUsers",
+          "Identifier": "Main_ControlUsers",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_DefineArm",
+          "Identifier": "Main_DefineArm",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_DefineCompany",
+          "Identifier": "Main_DefineCompany",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_DefineFiscalYear",
+          "Identifier": "Main_DefineFiscalYear",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_DefineUser",
+          "Identifier": "Main_DefineUser",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_Faq",
+          "Identifier": "Main_Faq",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_FaqTag",
+          "Identifier": "Main_FaqTag",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_FiscalYearNumber",
+          "Identifier": "Main_FiscalYearNumber",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_Geography",
+          "Identifier": "Main_Geography",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_GroupNumber",
+          "Identifier": "Main_GroupNumber",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_StandardDes",
+          "Identifier": "Main_StandardDes",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_TableDocument",
+          "Identifier": "Main_TableDocument",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_TableSystems",
+          "Identifier": "Main_TableSystems",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Main_Tag",
+          "Identifier": "Main_Tag",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_TTMS_Base",
+          "Identifier": "TTMS_Base",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Main.Tbl_ErrorLog",
+          "Identifier": "Main_ErrorLog",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Main.Tbl_System",
+          "Identifier": "Main_System",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Main.Tbl_SystemManager",
+          "Identifier": "SystemManager",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Prd",
+      "Tables": [
+        {
+          "Tablename": "dbo.View_Por_DebrisRequest",
+          "Identifier": "Prd_VDebrisRequest",
+          "Module": "Prd",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.View_Por_ProductionObject",
+          "Identifier": "Prd_VProductionObject",
+          "Module": "Prd",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.View_Por_WasterObject",
+          "Identifier": "Prd_VWasterObject",
+          "Module": "Prd",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Sal",
+      "Tables": [
+        {
+          "Tablename": "Sal.Tbl_CellarOfSaleCenter",
+          "Identifier": "Sal_CellarOfSaleCenter",
+          "Module": "Sal",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Sal.Tbl_DefineCustomer",
+          "Identifier": "Sal_DefineCustomer",
+          "Module": "Sal",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Sal.Tbl_DefineDeliverySite",
+          "Identifier": "Sal_DefineDeliverySite",
+          "Module": "Sal",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Sal.Tbl_DefineSaleCenter",
+          "Identifier": "Sal_DefineSaleCenter",
+          "Module": "Sal",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Sal.Tbl_DefineSaleMethod",
+          "Identifier": "Sal_DefineSaleMethod",
+          "Module": "Sal",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Sal.Tbl_InfoCustomer",
+          "Identifier": "Sal_InfoCustomer",
+          "Module": "Sal",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Sal.View_AllDocument",
+          "Identifier": "Sal_CustomerInfoInDocument",
+          "Module": "Sal",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Sal.View_DebrisSaleDocumentsInCellar",
+          "Identifier": "Sal_VDebrisSaleDocumentsInCellar",
+          "Module": "Sal",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Tax",
+      "Tables": [
+        {
+          "Tablename": "dbo.Tbl_Acc_CloseAccount",
+          "Identifier": "TblAccCloseAccount",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_Currency",
+          "Identifier": "Tax_Currency",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_History",
+          "Identifier": "Tax_History",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_ImportSetting",
+          "Identifier": "Tax_ImportSetting",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_Invoice",
+          "Identifier": "Tax_Invoice",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_Invoice2",
+          "Identifier": "Tax_Invoice2",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_Invoice3",
+          "Identifier": "Tax_Invoice3",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_Schedule",
+          "Identifier": "Tax_Schedule",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_Setting",
+          "Identifier": "Tax_Setting",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_Stuff",
+          "Identifier": "Tax_Stuff",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_StuffObject",
+          "Identifier": "Tax_StuffObject",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Tax_Unit",
+          "Identifier": "Tax_Unit",
+          "Module": "Tax",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "Main.Tbl_ErrorLog",
+          "Identifier": "Tbl_ErrorLog",
+          "Module": "Main",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Trn",
+      "Tables": [
+        {
+          "Tablename": "dbo.Tbl_Clr_DetailInternalTransit",
+          "Identifier": "Trn_DetailInternalTransit",
+          "Module": "Trn",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Clr_HeadInternalTransit",
+          "Identifier": "Trn_HeadInternalTransit",
+          "Module": "Trn",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    },
+    {
+      "Key": "Wfw",
+      "Tables": [
+        {
+          "Tablename": "dbo.Tbl_Wfw_Attach",
+          "Identifier": "Wfw_Attach",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_Cartable",
+          "Identifier": "Wfw_Cartable",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_Conditin",
+          "Identifier": "Wfw_Conditin",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_Process",
+          "Identifier": "Wfw_Process",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_ProcessAction",
+          "Identifier": "Wfw_ProcessAction",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_ProcessStep",
+          "Identifier": "Wfw_ProcessStep",
+          "Module": "Wfw",
+          "PermissionKey": "Wfw_ProcessStep"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_RelationStep",
+          "Identifier": "Wfw_RelationStep",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_RelationStepCondition",
+          "Identifier": "Wfw_RelationStepCondition",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_ResultStep",
+          "Identifier": "Wfw_ResultStep",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_RoleStep",
+          "Identifier": "Wfw_RoleStep",
+          "Module": "Wfw",
+          "PermissionKey": "Wfw_RoleStep"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_Status",
+          "Identifier": "Wfw_Status",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_StepAction",
+          "Identifier": "Wfw_StepAction",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Tbl_Wfw_UserCartable",
+          "Identifier": "Wfw_UserCartable",
+          "Module": "Wfw",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
+  "UpgradeInfo": {
+    "InitialType": "Community",
+    "InitialVersion": "5.0.24.0"
+  }
+}

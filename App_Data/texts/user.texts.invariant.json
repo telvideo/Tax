@@ -1,0 +1,22 @@
+{
+  "Db.Acc.Acc_DefineCompany.Active": "فعال",
+  "Db.Acc.Acc_DefineCompany.Address": "آدرس",
+  "Db.Acc.Acc_DefineCompany.Caption": "عنوان",
+  "Db.Acc.Acc_DefineCompany.CodeCompany": "کد تفصیلی",
+  "Db.Acc.Acc_DefineCompany.CodeEconomic": "کد اقتصادی",
+  "Db.Acc.Acc_DefineCompany.Email": "ایمیل",
+  "Db.Acc.Acc_DefineMoein.Active": "فعال",
+  "Db.Acc.Acc_DefineMoein.RefTotal": "Ref Total",
+  "Db.Acc.Acc_DefinePersona.Active": "فعال",
+  "Db.Acc.Acc_DefinePersona.Address": "آدرس",
+  "Db.Acc.Acc_DefinePersona.Caption": "عنوان",
+  "Db.Erp.Com.GuarantyCardInstallationTimeAndStartTimeInformationUpdatePerformed": "به  روز رسانی تاریخ شروع  و گارانتی  انجام شد",
+  "Db.Erp.Com.Referral": "ارجاع",
+  "Navigation.Acc/Codding/Acc Define Group": "گروه",
+  "Navigation.Arm": "سیستم تجمیع اطلاعات",
+  "Navigation.COM": "COM",
+  "Permission.ERP:Acc:Acc_DefinePersona:Export": "ارسال",
+  "Permission.ERP:Acc:Acc_DefinePersona:Import": "دریافت",
+  "Permission.ERP:Acc:Acc_DefinePersona:Print": "پرینت",
+  "Permission.ERP:Acc:Acc_DefinePersona:View": "نمایش"
+}

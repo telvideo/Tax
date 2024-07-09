@@ -1,0 +1,68 @@
+﻿.col-sm-6.field {
+    display: flex;
+}
+
+.col-sm-6 label + input[type=checkbox].editor {
+    flex: unset !important;
+    height: 31px;
+    margin: 0;
+}
+
+.col-sm-6 label + .editor,
+.s-Form label.caption, .col-sm-6 label.caption {
+    font-size: 13px;
+}
+.s-Toolbar .button-inner{
+    padding:0 3px 0 20px !important;
+}
+div.s-Toolbar .tool-button.no-text span.button-inner{
+    padding:5px 13px 19px 3px !important;
+}
+
+@media (min-width:768px) {
+    .col-sm-6.field {
+        flex: 0 1 auto;
+    }
+
+    .col-sm-6 label {
+        flex: 0 0 auto;
+    }
+
+        .col-sm-6 label + .editor {
+            flex: 1 1 80%;
+            height: 26px;
+            overflow: hidden;
+        }
+}
+
+@media (min-width:992px) {
+    .s-Form label.caption,
+    .col-sm-6 label.caption {
+        text-align: left;
+    }
+}
+
+@media (max-width:991px) {
+    .flex-layout .field,
+    .col-sm-6.field {
+        flex-wrap: wrap;
+    }
+
+    .s-Form label.caption, .col-sm-6 label.caption {
+        white-space:nowrap;
+    }
+}
+
+@media (max-width:767px) {
+    .col-sm-6.field {
+        flex-wrap: wrap;
+    }
+
+    .col-sm-6 label {
+        flex: 0 0 auto !important;
+    }
+
+        .col-sm-6 label + .editor {
+            flex: 1 1 70%;
+        }
+}
